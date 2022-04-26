@@ -15,10 +15,16 @@ Orange color: #e67e22
 }
 
 :root {
-    --themeColor: #FFC40C;
-    --bodycolor: #130f00;
-    --altbodycolor: #FFFBEE; 
-    --buttoncolor: #FF9D03;
+    /* --themeColor: #FFC40C; */
+    --themeColor: #F40009;
+    --fontcolor: #F40009;
+    --altfontcolor: #fff;
+    /* --bodycolor: #130f00; */
+    --bodycolor: #202020;
+    /* --altbodycolor: #FFFBEE;  */
+    --altbodycolor: #111111; 
+    --buttoncolor: #FF0000;
+    --altbuttoncolor: #3ae90f;
     --sectionstepscolor: #f4f4f4;		/*How it works, signup section*/
     --shadowcolor: #efefef;
     --planboxbordercolor: #e8e8e8;
@@ -29,16 +35,18 @@ Orange color: #e67e22
     --twittercolor: #00aced;
     --googlecolor: #dd4b39;
     --instagramcolor: #517fa4;   
-    --customernotebgcolor: rgb(38, 190, 0); 
+    --customernotebgcolor: #E11218 ; 
     --whitecolor: #fff;
   }
 
 html,
 body {
-    background-color: #fff;
-    color: #555;
+    background-color: var(--bodyColor);
+    color: #fff;
     /* font-family: system-ui, 'system-ui', 'flame', 'Poppins', 'Lato', 'sans-serif', 'Arial'; */
-    font-family: 'Lobster', 'Arial', system-ui, 'system-ui';    
+    /* font-family: 'Lobster', 'Arial', system-ui, 'system-ui';     */
+    font-family: 'Great Vibes', serif;    
+    /* font-family: 'Viaoda Libre', serif;     */
     font-weight: 300;
     font-size: 16px;
     text-rendering: optimizeLegibility;
@@ -131,7 +139,7 @@ h2:after {
 .icon-big {
     font-size: 250%;
     display: block;
-    color: var(--buttoncolor);
+    color: var(--themeColor);
     margin-bottom: 10px;
 }
 
@@ -139,7 +147,7 @@ h2:after {
     display: inline-block;
     width: 30px;
     text-align: center;
-    color: var(--buttoncolor);
+    color: var(--themeColor);
     font-size: 200%;
     margin-right: 10px;
     font-weight: bold;    
@@ -174,6 +182,7 @@ input[type=submit] {
     display: inline-block;
     padding: 10px 30px;
     font-weight: 300;
+    font-size: 150%;
     text-decoration: none;
     border-radius: 200px;
     -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
@@ -199,17 +208,17 @@ input[type=submit] {
 .btn:active,
 input[type=submit]:hover,
 input[type=submit]:active {
-    background-color: #cf6d17;
+    background-color: var(--altbuttoncolor);
 }
 
 .btn-full:hover,
 .btn-full:active {
-    border: 1px solid #cf6d17;
+    border: 1px solid var(--altbuttoncolor);
 }
 
 .btn-ghost:hover,
 .btn-ghost:active {
-    border: 1px solid #cf6d17;
+    border: 1px solid var(--altbuttoncolor);
     color: #fff;
 }
 
@@ -226,7 +235,7 @@ input[type=submit]:active {
     height: 100vh;
     background-attachment: fixed; */
     height: 100px;
-    background-color: var(--bodycolor);
+    background-color: var(--altbodycolor);
 }
 /*
 .hero-text-box {
@@ -265,12 +274,13 @@ input[type=submit]:active {
 .main-nav li {
     display: inline-block;
     margin-left: 40px;
+    font-family: 'Nanum Myeongjo';
 }
 
 .main-nav li a:link,
 .main-nav li a:visited {
     padding: 8px 0;
-    color: #08f;
+    color: var(--fontColor);
     text-decoration: none;
     /* text-transform: uppercase; */
     text-transform: capitalize;
@@ -323,7 +333,7 @@ input[type=submit]:active {
 .sticky .main-nav li a:link,
 .sticky .main-nav li a:visited {
     padding: 16px 0;
-    color: var(--altbodycolor);
+    color: var(--fontcolor);
 }
 
 .sticky .logo { display: none; }
@@ -333,18 +343,21 @@ input[type=submit]:active {
 /* FEATURES */
 /* ----------------------------------------------- */
 
+.section-features{
+    background-color: var(--bodycolor);
+}
+
 .section-features .long-copy {
     margin-bottom: 30px;
 }
-
 
 /* ----------------------------------------------- */
 /* Deals */
 /* ----------------------------------------------- */
 .section-cities {
-    background-color: var(--whitecolor);
+    background-color: var(--bodycolor);
     /* background-color: var(--planboxbgcolor); */
-    color: var(--bodycolor);
+    /* color: var(--bodycolor); */
     vertical-align: top;
     /* height: 100vh; */
     /* padding-top : 10px; */
@@ -353,7 +366,7 @@ input[type=submit]:active {
 
 .customer-note {
     text-transform: capitalize;
-    font-family: 'Roboto Slab';
+    font-family: 'Nanum Myeongjo';
     font-size: 125%;
     font-weight: 500;
     width: 100%;
@@ -368,10 +381,11 @@ input[type=submit]:active {
     text-transform: capitalize;
     margin-top: 0;
     margin-bottom: 20px;
-    color: var(--bodycolor);
+    color: var(--fontcolor);
     font-size: 240%;
     word-spacing: 4px;
     letter-spacing: 1px;
+    font-weight: bold;
 }
 
 
@@ -399,14 +413,14 @@ ul {
 }
 
 .city-feature ul li {
-    font-family: 'Roboto Slab';
+    font-family: 'Nanum Myeongjo';
     font-size: 75%;
     margin-top: -10px;
     font-weight: 500;
 }
 
 .home-order-online{
-    float: right;
+    float: right; 
 }
 
 /* ----------------------------------------------- */
@@ -414,26 +428,27 @@ ul {
 /* ----------------------------------------------- */
 
 .section-plans {
-    background-color: #f4f4f4;
+    background-color: var(--altbodycolor);
+
 }
 
 .sub-menu {
     font-weight: 500;
-    /* font-family: 'Roboto Slab'; */
+    /* font-family: 'Nanum Myeongjo'; */
     font-size: 150%;
 }
 
 .plan-box {
-    background-color: #fff;
+    background-color: var(--bodycolor);
     border-radius: 5px;
     width: 90%;
     margin-left: 5%;
-    box-shadow: 0 2px 2px #efefef;
+    box-shadow: 0 2px 2px var(--altbodycolor);
 }
 
 .menu-header h3 {
     padding-top: 5px;
-    font-family: 'Roboto Slab';
+    font-family: 'Nanum Myeongjo';
     font-weight: 600;
     margin-bottom: 0px;
 }
@@ -441,7 +456,8 @@ ul {
 .menu-header p {
     /* height: 20px; */
     font-size: 120%;
-    /* margin-bottom: 10px; */
+    font-family: 'Nanum Myeongjo';
+   /* margin-bottom: 10px; */
     font-weight: 100;
     color: var(--themeColor);
     /* padding-bottom: -20px; */
@@ -460,7 +476,7 @@ ul {
 }
 
 .snackdrink ul li {
-    font-family: 'Roboto Slab';
+    font-family: 'Nanum Myeongjo';
     font-weight: 500;
 }
 
