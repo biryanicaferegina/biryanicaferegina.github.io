@@ -17,14 +17,14 @@ Orange color: #e67e22
 :root {
     /* --themeColor: #FFC40C; */
     --themeColor: #F40009;
-    --fontcolor: #F40009;
-    --altfontcolor: #fff;
+    --fontcolor: #fff;
+    --altfontcolor: #F40009;
     /* --bodycolor: #130f00; */
     --bodycolor: #202020;
     /* --altbodycolor: #FFFBEE;  */
     --altbodycolor: #111111; 
-    --buttoncolor: #FF0000;
-    --altbuttoncolor: #3ae90f;
+    --buttoncolor: #AA0000;
+    --altbuttoncolor: #37ab1a;
     --sectionstepscolor: #f4f4f4;		/*How it works, signup section*/
     --shadowcolor: #efefef;
     --planboxbordercolor: #e8e8e8;
@@ -35,13 +35,13 @@ Orange color: #e67e22
     --twittercolor: #00aced;
     --googlecolor: #dd4b39;
     --instagramcolor: #517fa4;   
-    --customernotebgcolor: #E11218 ; 
+    --customernotebgcolor: #37ab1a ; 
     --whitecolor: #fff;
   }
 
 html,
 body {
-    background-color: var(--bodyColor);
+    /* background-color: var(--bodyColor); */
     color: #fff;
     /* font-family: system-ui, 'system-ui', 'flame', 'Poppins', 'Lato', 'sans-serif', 'Arial'; */
     /* font-family: 'Lobster', 'Arial', system-ui, 'system-ui';     */
@@ -192,15 +192,15 @@ input[type=submit] {
 .btn-full:link,
 .btn-full:visited,
 input[type=submit] {
-    background-color: var(--themeColor);
-    border: 1px solid var(--themeColor);
+    background-color: var(--buttoncolor);
+    border: 1px solid var(--buttoncolor);
     color: #fff;
     margin-right: 1px;
 }
 
 .btn-ghost:link,
 .btn-ghost:visited {
-    border: 1px solid var(--themeColor);
+    border: 1px solid var(--buttoncolor);
     color: var(--themeColor);
 }
 
@@ -228,14 +228,17 @@ input[type=submit]:active {
 /* ----------------------------------------------- */
 
  header {
-    /* background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
+    background-image: -webkit-linear-gradient(rgba(50, 0, 0, 0.7), rgba(40, 0, 0, 0.7)), url(img/bgimg.jpg);
+    background-image: linear-gradient(rgba(50, 0, 0, 0.7), rgba(40, 0, 0, 0.7)), url(img/bgimg.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
-    background-attachment: fixed; */
-    height: 100px;
-    background-color: var(--altbodycolor);
+    background-attachment: fixed;
+    /* height: 100px; */
+    /* background-color: var(--altbodycolor); */
+
+
+
 }
 /*
 .hero-text-box {
@@ -274,7 +277,7 @@ input[type=submit]:active {
 .main-nav li {
     display: inline-block;
     margin-left: 40px;
-    font-family: 'Nanum Myeongjo';
+    font-family: 'Acme';
 }
 
 .main-nav li a:link,
@@ -354,19 +357,9 @@ input[type=submit]:active {
 /* ----------------------------------------------- */
 /* Deals */
 /* ----------------------------------------------- */
-.section-cities {
-    background-color: var(--bodycolor);
-    /* background-color: var(--planboxbgcolor); */
-    /* color: var(--bodycolor); */
-    vertical-align: top;
-    /* height: 100vh; */
-    /* padding-top : 10px; */
-    /* padding-bottom: 20px; */
-}
-
 .customer-note {
     text-transform: capitalize;
-    font-family: 'Nanum Myeongjo';
+    font-family: 'Acme';
     font-size: 125%;
     font-weight: 500;
     width: 100%;
@@ -374,6 +367,17 @@ input[type=submit]:active {
     background-color: var(--customernotebgcolor);
     color: #fff;
     text-align: center;
+    padding-top: 5px;
+}
+
+.section-cities {
+    /* background-color: var(--bodycolor); */
+    /* background-color: var(--planboxbgcolor); */
+    /* color: var(--bodycolor); */
+    vertical-align: top;
+    /* height: 100vh; */
+    /* padding-top : 10px; */
+    /* padding-bottom: 20px; */
 }
 
 .main-tag div {
@@ -391,10 +395,12 @@ input[type=submit]:active {
 
 .main-tag p {
     height: 30px;
-    font-size: 250%;
+    font-size: 100%;
     margin-bottom: 10px;
     font-weight: 100;
-    color: var(--themeColor);
+    /* color: var(--fontcolor); */
+    color: #00aced;
+    font-family: 'Acme';
 }
 
 .main-tag img {
@@ -413,7 +419,7 @@ ul {
 }
 
 .city-feature ul li {
-    font-family: 'Nanum Myeongjo';
+    font-family: 'Acme';
     font-size: 75%;
     margin-top: -10px;
     font-weight: 500;
@@ -434,21 +440,23 @@ ul {
 
 .sub-menu {
     font-weight: 500;
-    /* font-family: 'Nanum Myeongjo'; */
+    /* font-family: 'Acme'; */
     font-size: 150%;
+    margin-top: 3%;
 }
 
 .plan-box {
     background-color: var(--bodycolor);
     border-radius: 5px;
     width: 90%;
-    margin-left: 5%;
+    margin-top: 0.3%;
+    margin-left: 0%;
     box-shadow: 0 2px 2px var(--altbodycolor);
 }
 
 .menu-header h3 {
     padding-top: 5px;
-    font-family: 'Nanum Myeongjo';
+    font-family: 'Acme';
     font-weight: 600;
     margin-bottom: 0px;
 }
@@ -456,10 +464,10 @@ ul {
 .menu-header p {
     /* height: 20px; */
     font-size: 120%;
-    font-family: 'Nanum Myeongjo';
+    font-family: 'Acme';
    /* margin-bottom: 10px; */
     font-weight: 100;
-    color: var(--themeColor);
+    color: var(--whitecolor);
     /* padding-bottom: -20px; */
     margin-bottom: -5px;
 }
@@ -476,7 +484,7 @@ ul {
 }
 
 .snackdrink ul li {
-    font-family: 'Nanum Myeongjo';
+    font-family: 'Acme';
     font-weight: 500;
 }
 
